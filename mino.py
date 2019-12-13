@@ -12,6 +12,10 @@ class MouIkutsuNerutoOshogatsu:
 
         return delta.days
 
+def execute():
+    mino = MouIkutsuNerutoOshogatsu()
+    return str(mino.answer())
+
 def main():
     mino = MouIkutsuNerutoOshogatsu()
     h = mino.answer()
