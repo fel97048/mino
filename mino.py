@@ -32,7 +32,7 @@ def execute(request):
     }
 
     mino = MouIkutsuNerutoOshogatsu()
-    return str(mino.answer())
+    return (str(mino.answer()), 200, headers)
 
 def main():
     mino = MouIkutsuNerutoOshogatsu()
