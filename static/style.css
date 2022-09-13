@@ -1,0 +1,21 @@
+h1{
+    font-weight: bold
+  }
+  .contents{
+    padding: 5px 15px;
+  }
+  .answer{
+    padding: 50px 10px;
+    width:250px;
+    background: url('./fukidashi.png') left top no-repeat;
+    background-size: contain;
+    float: left;
+    text-align: center;
+  }
+  .mochi {
+    width: 250px
+  }
+  #days{
+    font-size: 65px;
+    font-weight: bold
+  }
