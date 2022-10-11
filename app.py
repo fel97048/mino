@@ -1,6 +1,7 @@
 from markupsafe import escape
 from flask import Flask
 from flask import render_template
+from waitress import serve
 
 from mino import MouIkutsuNerutoOshogatsu
 
@@ -13,4 +14,5 @@ def index():
     return render_template('mino.html', answer = h)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    serve(app, host='0.0.0.0', port=5000)
+ 
