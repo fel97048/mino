@@ -15,15 +15,20 @@
    > pip3 install flask
    ```
 
-3. ソースをgitクローン
+3. waitressをインストール
+   ```
+   > pip3 install waitress
+   ```
+
+4. ソースをgitクローン
    ```
    > git clone https://github.com/fel97048/mino.git
    ```
 
-4. 起動
+5. 起動
    ```
    > cd mino/
    > python app.py
    ```
 
-5. ブラウザから http://127.0.0.1:5000/ にアクセス
+6. ブラウザから http://127.0.0.1:5000/ にアクセス
