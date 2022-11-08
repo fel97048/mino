@@ -3,7 +3,10 @@
 import datetime
 
 class MouIkutsuNerutoOshogatsu:
-    def answer(self, today=datetime.date.today()):
+    def answer(self, today=None):
+        if today is None:
+            today = datetime.date.today()
+
         if (today.month == 1 and today.day in range(1, 4)):
             return 0
 

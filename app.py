@@ -1,4 +1,4 @@
-from markupsafe import escape
+import datetime
 from flask import Flask
 from flask import render_template
 from waitress import serve
@@ -10,7 +10,7 @@ app = Flask(__name__, static_folder='static')
 @app.route('/')
 def index():
     mino = MouIkutsuNerutoOshogatsu()
-    h = mino.answer()
+    h = mino.answer(datetime.date.today())
     return render_template('mino.html', answer = h)
 
 if __name__ == '__main__':
